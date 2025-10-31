@@ -8,6 +8,5 @@ function maximo(arreglo){
         }
     }
     return mayor;
-    
 }
 module.exports={maximo} 

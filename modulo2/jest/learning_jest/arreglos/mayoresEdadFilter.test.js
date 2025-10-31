@@ -12,6 +12,5 @@ describe('Mayores de Edad', ()=>{
     test('Sad path: edades invalidas', () => {
         expect(()=>mayoresEdad([18, -1])).toThrow('edad inválida'); 
         expect(()=>mayoresEdad('arreglo')).toThrow('arreglo inválido'); 
-    }); 
-    
+    });  
 }); 

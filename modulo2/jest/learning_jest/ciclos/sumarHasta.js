@@ -11,4 +11,5 @@ function sumaHasta(numero) {
     }
     return total;
 }
+
 module.exports = { sumaHasta };

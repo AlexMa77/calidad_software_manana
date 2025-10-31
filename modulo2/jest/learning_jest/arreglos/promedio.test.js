@@ -12,5 +12,4 @@ describe('Promedio', ()=>{
         expect(()=>promedio([])).toThrow('arreglo inválido'); 
         expect(()=>promedio('edificio')).toThrow('arreglo inválido'); 
     }); 
-    
 }); 

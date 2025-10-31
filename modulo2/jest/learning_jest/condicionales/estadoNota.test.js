@@ -14,4 +14,5 @@ describe('estadoNota', ()=>{
         expect(()=>estadoNota('10')).toThrow('nota inválida'); 
         expect(()=>estadoNota(50)).toThrow('nota inválida'); 
     }); 
+    
 });

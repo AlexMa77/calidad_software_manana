@@ -10,4 +10,5 @@ describe('contarPares', () => {
     test('Sad path: numero invalido', () => {
         expect(() => contarPares('no array')).toThrow('array invalido');
     });
+    
 });

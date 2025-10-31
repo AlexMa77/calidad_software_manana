@@ -11,4 +11,5 @@ describe('sumaHasta', () => {
         expect(() => sumaHasta('10')).toThrow('numero invalido');
         expect(() => sumaHasta(2.5)).toThrow('numero invalido');
     });
+    
 });

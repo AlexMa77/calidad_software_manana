@@ -12,5 +12,4 @@ describe('Maximo', ()=>{
         expect(()=>maximo([])).toThrow('arreglo inválido'); 
         expect(()=>maximo('edificio')).toThrow('arreglo inválido'); 
     }); 
-    
 }); 

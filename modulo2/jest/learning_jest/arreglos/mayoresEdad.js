@@ -11,5 +11,4 @@ function mayoresEdad(arreglo){
     }
     return mayores;
 }
-
 module.exports={mayoresEdad} 

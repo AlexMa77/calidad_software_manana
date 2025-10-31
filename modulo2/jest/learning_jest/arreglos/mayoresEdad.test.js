@@ -12,5 +12,4 @@ describe('Mayores de Edad con Filter', ()=>{
     test('Sad path: edades invalidas', () => {
         expect(()=>mayoresEdadFilter('arreglo')).toThrow('arreglo inválido'); 
     }); 
-    
 }); 

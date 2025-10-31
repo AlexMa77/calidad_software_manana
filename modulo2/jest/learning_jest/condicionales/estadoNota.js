@@ -11,4 +11,5 @@ function estadoNota(nota){
     if (nota>=4) return 'Supletorio';
     return 'Reprobado'
 }
+
 module.exports={estadoNota}

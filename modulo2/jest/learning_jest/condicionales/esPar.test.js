@@ -13,5 +13,4 @@ describe('esPar', () => {
     expect(() => esPar(3.5)).toThrow('El valor debe ser un número entero');
     expect(() => esPar('10')).toThrow('El valor debe ser un número entero');
     });
-
 });

@@ -9,4 +9,5 @@ function contarPares(arreglo) {
     }
     return contador;
 }
+
 module.exports = { contarPares }

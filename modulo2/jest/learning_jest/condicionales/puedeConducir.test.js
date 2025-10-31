@@ -13,4 +13,5 @@ describe('puedeConducir', () => {
         expect(() => puedeConducir(-1)).toThrow('Edad inválida');
         expect(() => puedeConducir('19')).toThrow('Edad inválida');
     });
+    
 });

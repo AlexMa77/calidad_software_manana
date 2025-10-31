@@ -10,6 +10,5 @@ function promedio(arreglo){
     }
     return suma/arreglo.length;
 }
-
 module.exports={promedio}
    
