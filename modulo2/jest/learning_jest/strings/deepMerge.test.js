@@ -1,14 +1,40 @@
+const { deepMerge, normalizarAlumno } = require('./deepMerge');
 
-const {deepMerge} = require('./deepMerge');
+describe('Igualdad profunda', () => {
 
-describe('Buscar Palabras', () => {
-    test('Happy path: JEST', () => {
-        const response = deepMerge('jest');
-        expect(response).toBe('JEST');
+    test('Happy path: deepMerge combina objetos anidados por valor', () => {
+        const a = {
+            user: { nombre: 'Ana', rol: 'estudiante' },
+            activo: true
+        };
+        const b = {
+            user: { rol: 'tutor' },
+            activo: true,
+            extra: 1
+        };
+        const response = deepMerge(a, b);
+        expect(response).toEqual({
+            user: { nombre: 'Ana', rol: 'tutor' },
+            activo: true,
+            extra: 1
+        });
     });
-    test('Sad path: ERROR', 
-        () => {
-        expect(() => deepMerge(null)).toThrow('texto invalido');
-        expect(() => deepMerge(123)).toThrow('texto invalido');
-    }); 
-});  
+
+    test('Happy path: normalizarAlumno retorna estructura con promedio', () => {
+        const alumno = { nombre: 'Ana', notas: [8, 9, 7] };
+        const response = normalizarAlumno(alumno);
+        expect(response).toEqual({
+            nombre: 'Ana',
+            notas: [8, 9, 7],
+            promedio: 8
+        });
+    });
+
+    test('Sad path: deepMerge con parámetros inválidos', () => {
+        expect(() => deepMerge(null, {}))
+            .toThrow(`a debe ser objeto`);
+        expect(() => deepMerge({}, []))
+            .toThrow(`b debe ser objeto`);
+    });
+
+});
