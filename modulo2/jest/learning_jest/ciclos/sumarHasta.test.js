@@ -1,4 +1,4 @@
-const { sumaHasta } = require('./sumaHasta');
+const { sumaHasta } = require('./sumarHasta');
 describe('sumaHasta', () => {
     test('Happy path: sumaHasta 5 es 15', () => {
         expect(sumaHasta(5)).toBe(15);
