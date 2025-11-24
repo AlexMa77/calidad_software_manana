@@ -14,4 +14,4 @@ function calcularTotalCafeteria(items, iva) {
     return { subtotal, iva: ivaValor, total };
 }
 
-module.exports = { calcularTotalCafeteria };
+module.exports = { calcularTotalCafeteria };    

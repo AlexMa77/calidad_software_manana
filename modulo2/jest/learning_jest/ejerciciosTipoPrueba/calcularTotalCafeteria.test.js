@@ -4,8 +4,8 @@ describe('Total Cafetería', () => {
 
     test('Happy path: calcula subtotal, IVA y total', () => {
         const items = [
-            { precioUnitario: 2, cantidad: 2 }, // 4
-            { precioUnitario: 1, cantidad: 3 }  // 3
+            { precioUnitario: 2, cantidad: 2 }, 
+            { precioUnitario: 1, cantidad: 3 }  
         ];
 
         const r = calcularTotalCafeteria(items, 10);
